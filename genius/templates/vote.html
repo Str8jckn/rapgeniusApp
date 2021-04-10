@@ -1,0 +1,33 @@
+<html>
+
+
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'static/css/vote.css' %}">
+    <link rel="stylesheet" href="static/css/vote.css">
+
+</head>
+{% block content %}
+<Header class="hd"> The "Illist" </Header>
+
+<div id="container">
+    <span id="question">Who is the Greatest Of All Time?</span>
+    <div><span>0</span><a href="">Vote</a>Jay-Z</div>
+    <div><span>0</span><a href="">Vote</a>Nas</div>
+    <div><span>0</span><a href="">Vote</a>Tupac</div>
+    <div><span>0</span><a href="">Vote</a>The Notorious B.I.G.</div>
+    <div><span>0</span><a href="">Vote</a>Pharoahe Monch</div>
+    <div><span>0</span><a href="">Vote</a>Royce 5'9"</div>
+    <div><span>0</span><a href="">Vote</a>Andre 3000</div>
+    <div><span>0</span><a href="">Vote</a>Lupe Fiasco</div>
+    <div><span>0</span><a href="">Enter ></a><input id="txt" type="text"></div>
+</div>
+{% endblock %}
+<script src="{% static 'static/js/vote.js'%}" type="text/javascript"></script>
+<script src="static/js/vote.js"></script>
+
+</html>
