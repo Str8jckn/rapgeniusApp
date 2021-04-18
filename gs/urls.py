@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import HomeView, YView, VoteView, LeadrView
+from .views import HomeView, YView, VoteView, LeadrView, CsectionView
 import requests
 from django.conf import settings
 from django.conf.urls.static import static
@@ -38,6 +38,7 @@ urlpatterns=[
     path('vote/', VoteView.as_view(), name="vote"),
     path('yyy/', YView.as_view(), name="Y"),
     path('leadr/', LeadrView.as_view(), name="Leadr"),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('csection', CsectionView.as_view(), name="csection"),
+] + static (settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 

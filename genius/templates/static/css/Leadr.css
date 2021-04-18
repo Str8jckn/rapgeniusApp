@@ -6,8 +6,8 @@ body {
   font-family: sans-serif;
   background: whitesmoke;
   background-image: -webkit-linear-gradient(135deg, #000000, #fbb61f);
-  background-image: linear-gradient(-45deg, #fbb61f, #000000);
-  color: rgba(255,255,255,.5);
+  background-image: linear-gradient(-15deg, #015d87, #000000);
+  color: #fbb61f;
 }
 
 .rb-box {

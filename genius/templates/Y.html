@@ -1,344 +1,317 @@
 <!DOCTYPE html>
 
-{% load static %}
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=<div class='Goat'>
-        <link rel=" stylesheet" href="{% static 'static/static_root/css/Y.css' %}">
-  <link rel="stylesheet" href="static/static_root/css/Y.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/Y.css">
+  <title>yyy</title>
 </head>
 
-<body ng-app="myApp" ng-controller="mainController">
-  {% block content %}
-  <div class="poll-container">
-    <div class="poll-voter">
-      <h4 class="poll-title">{{poll_title}}</h4>
-      <hr style="border: none; height: 2px; background: #fbb61f;">
+<div class="poll-container">
+  <div class="poll-voter">
+    <h4 class="poll-title ng-binding">Who Is The GOAT Emcee?</h4>
+    <hr style="border: none; height: 2px; background: #fbb61f;">
+    <table class="poll-list">
+      <tbody>
+        <!-- ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Jay-Z</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Pharoahe Monch</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Biggie</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Nas</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Eminem</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Foxy Brown</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Tupac</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Andre 3000</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">ScarFace</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Lupe Fiasco</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Royce 5'9"</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">DMX</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Lil' Wayne</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Rick Ross</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Joe Budden</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Kendrick Lamar</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Rakim</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Big Daddy Kane</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Method Man</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Snoop Dogg</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">T.I.</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Pusha T</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Loaded Lux</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Drake</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Dr.Dre</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Nicki Minaj</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Lil Kim</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Queen Latifah</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Lauryn Hill</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">J. Cole</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Kanye West</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Game</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Beanie Sigel</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Eve</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Missy Elliot</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Rapsody</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">MC Lyte</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Jean Grae</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Remy Ma</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">JadaKiss</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
+        <tr class="vote-row ng-scope" ng-repeat="opt in options">
+          <td class="poll-option">
+            <p class="ng-binding">Other</p>
+            <div class="poll-option-bar" style="width: 0%;"></div>
+          </td>
+          <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
+        </tr><!-- end ngRepeat: opt in options -->
 
-      <div class="poll-container">
-        <div class="poll-voter">
-          <h4 class="poll-title ng-binding">Who Is The GOAT Emcee?</h4>
-          <hr style="border: none; height: 2px; background: #fbb61f;">
-          <table class="poll-list">
-            <tbody>
-              <!-- ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Jay-Z</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Pharoahe Monch</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Biggie</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Nas</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Eminem</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Foxy Brown</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Tupac</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Andre 3000</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">ScarFace</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Lupe Fiasco</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Royce 5'9"</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">DMX</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Lil' Wayne</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Rick Ross</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Joe Budden</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Kendrick Lamar</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Rakim</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Big Daddy Kane</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Method Man</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Snoop Dogg</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">T.I.</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Pusha T</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Loaded Lux</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Drake</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Dr.Dre</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Nicki Minaj</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Lil Kim</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Queen Latifah</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Lauryn Hill</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">J. Cole</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Kanye West</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Game</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Beanie Sigel</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Eve</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Missy Elliot</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Rapsody</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">MC Lyte</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Jean Grae</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Remy Ma</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">JadaKiss</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-              <tr class="vote-row ng-scope" ng-repeat="opt in options">
-                <td class="poll-option">
-                  <p class="ng-binding">Other</p>
-                  <div class="poll-option-bar" style="width: 0%;"></div>
-                </td>
-                <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-              </tr><!-- end ngRepeat: opt in options -->
-
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-
-
-</body>
-<table class="poll-list">
-  <tbody>
-    <tr class="vote-row" ng-repeat="opt in options">
-      <td class="poll-option">
-        <p>{{opt.name}}</p>
-        <div class="poll-option-bar" style="width:{{opt.pct}}%;"></div>
-      </td>
-      <td><button class="vote-btn" ng-click="addVote(opt, $index)">vote</button></td>
-    </tr>
-  </tbody>
-</table>
-</div>
+      </tbody>
+    </table>
+  </div>
 </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="{% static 'static/static_root/js/Y.js'%}" type="text/javascript"></script>
-<script src="static/static_root/js/Y.js"></script>
+<script src="static/js/Y.js"></script>
 
 </html>
-{% endblock %}
